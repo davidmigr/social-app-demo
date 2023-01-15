@@ -42,32 +42,15 @@ export default async function handler(req, res) {
         break;
 
       case "PUT":
-        const updateData = await fetch(`${baseUrl}/updateOne`, {
+        const putData = await fetch(`${baseUrl}/insertOne`, {
           ...fetchOptions,
           body: JSON.stringify({
             ...fetchBody,
-            filter: { _id: { $oid: req.body._id } },
-            update: {
-              $set: {
-                body: req.body.body,
-              },
-            },
+            document: flutter,
           }),
         });
-        const updateDataJson = await updateData.json();
-        res.status(200).json(updateDataJson);
-        break;
-
-      case "DELETE":
-        const deleteData = await fetch(`${baseUrl}/deleteOne`, {
-          ...fetchOptions,
-          body: JSON.stringify({
-            ...fetchBody,
-            filter: { _id: { $oid: req.body._id } },
-          }),
-        });
-        const deleteDataJson = await deleteData.json();
-        res.status(200).json(deleteDataJson);
+        const insertDataJson = await insertData.json();
+        res.status(200).json(insertDataJson);
         break;
 
       default:
