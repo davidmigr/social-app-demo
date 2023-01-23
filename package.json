@@ -9,23 +9,23 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@auth0/nextjs-auth0": "^1.8.0",
-    "@mantine/core": "^4.2.2",
-    "@mantine/dropzone": "^4.2.2",
-    "@mantine/form": "^4.2.2",
-    "@mantine/hooks": "^4.2.2",
-    "@mantine/modals": "^4.2.2",
-    "@mantine/next": "^4.2.2",
-    "@mantine/notifications": "^4.2.2",
-    "aws-sdk": "^2.1131.0",
-    "formidable": "^2.0.1",
-    "next": "12.1.6",
-    "react": "18.1.0",
-    "react-dom": "18.1.0",
-    "tabler-icons-react": "^1.47.0"
+    "@auth0/nextjs-auth0": "^1.9.0",
+    "@mantine/core": "^5.10.1",
+    "@mantine/dropzone": "^5.10.1",
+    "@mantine/form": "^5.10.1",
+    "@mantine/hooks": "^5.10.1",
+    "@mantine/modals": "^5.10.1",
+    "@mantine/next": "^5.10.1",
+    "@mantine/notifications": "^5.10.1",
+    "aws-sdk": "^2.1300.0",
+    "formidable": "^2.1.1",
+    "next": "13.1.5",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "tabler-icons-react": "^1.56.0"
   },
   "devDependencies": {
-    "eslint": "8.14.0",
-    "eslint-config-next": "12.1.6"
+    "eslint": "8.32.0",
+    "eslint-config-next": "13.1.5"
   }
 }
